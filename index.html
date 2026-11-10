@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SLUMMADEART | Streetwear & Art</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <a href="#" class="logo">
+                SLUMMADEART
+            </a>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#clothing">Clothing</a></li>
+                <li><a href="#art">Art</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <button class="cart-button"
+                    onclick="showCart()">
+                🛒 Cart (<span id="cart-count">0</span>)
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="tagline">
+                INDEPENDENT STREETWEAR & CREATIVE ART
+            </p>
+
+            <h1>
+                WEAR YOUR<br>
+                <span>CREATIVITY.</span>
+            </h1>
+
+            <p>
+                Slummadeart is more than clothing.
+                It's a lifestyle, a culture, and a
+                creative expression.
+            </p>
+
+            <a href="#clothing" class="shop-button">
+                SHOP COLLECTION
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Clothing Section -->
+    <section class="products" id="clothing">
+
+        <div class="section-heading">
+
+            <p>THE COLLECTION</p>
+
+            <h2>Streetwear Essentials</h2>
+
+        </div>
+
+        <div class="product-grid">
+
+            <div class="product">
+
+                <img
+                src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=85"
+                alt="Streetwear T-shirt">
+
+                <h3>Slummadeart Classic Tee</h3>
+
+                <p>R350</p>
+
+                <button onclick="addToCart('Classic Tee', 350)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <div class="product">
+
+                <img
+                src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=85"
+                alt="Streetwear hoodie">
+
+                <h3>Urban Hoodie</h3>
+
+                <p>R650</p>
+
+                <button onclick="addToCart('Urban Hoodie', 650)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <div class="product">
+
+                <img
+                src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=700&q=85"
+                alt="Streetwear fashion">
+
+                <h3>Streetwear Collection</h3>
+
+                <p>R450</p>
+
+                <button onclick="addToCart('Streetwear Collection', 450)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Art Section -->
+    <section class="art-section" id="art">
+
+        <div class="section-heading">
+
+            <p>CREATIVE EXPRESSION</p>
+
+            <h2>Original Art & Designs</h2>
+
+        </div>
+
+        <div class="art-grid">
+
+            <div class="art-card">
+
+                <img
+                src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=700&q=85"
+                alt="Abstract artwork">
+
+                <h3>Abstract Dreams</h3>
+
+                <p>Original creative artwork</p>
+
+                <strong>R850</strong>
+
+                <button onclick="addToCart('Abstract Dreams Art', 850)">
+                    Buy Artwork
+                </button>
+
+            </div>
+
+
+            <div class="art-card">
+
+                <img
+                src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=700&q=85"
+                alt="Contemporary art painting">
+
+                <h3>Creative Vision</h3>
+
+                <p>Contemporary art collection</p>
+
+                <strong>R1200</strong>
+
+                <button onclick="addToCart('Creative Vision Art', 1200)">
+                    Buy Artwork
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <p>OUR STORY</p>
+
+        <h2>Art Meets Street Culture.</h2>
+
+        <p>
+            SLUMMADEART is an independent creative brand
+            built around fashion, originality, and art.
+
+            We bring together streetwear and creative
+            expression to give people something unique
+            to wear and something meaningful to own.
+        </p>
+
+    </section>
+
+
+    <!-- Shopping Cart -->
+    <section class="cart-section" id="cart">
+
+        <h2>Your Shopping Cart</h2>
+
+        <div id="cart-items">
+            Your cart is empty.
+        </div>
+
+        <h3>
+            Total: R<span id="cart-total">0</span>
+        </h3>
+
+        <button onclick="checkout()">
+            ORDER ON WHATSAPP
+        </button>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h2>SLUMMADEART</h2>
+
+        <p>
+            Wear your creativity.
+            Own your expression.
+        </p>
+
+        <p>
+            © 2026 SLUMMADEART.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

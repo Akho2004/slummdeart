@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #080808;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul a:hover {
+    color: #ff4d00;
+}
+
+.cart-button {
+    background: #ff4d00;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    ),
+    url("https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1600&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline {
+    color: #ff4d00;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 8vw, 85px);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #ff4d00;
+}
+
+.hero-content p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.shop-button {
+    display: inline-block;
+    background: #ff4d00;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Product sections */
+
+.products,
+.art-section {
+    padding: 80px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading p {
+    color: #ff4d00;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-size: 35px;
+}
+
+.product-grid,
+.art-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+}
+
+.product,
+.art-card {
+    background: #1c1c1c;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.product img,
+.art-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product h3,
+.art-card h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.product p,
+.art-card p {
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.art-card strong {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product button,
+.art-card button,
+.cart-section button {
+    background: #ff4d00;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+.product button:hover,
+.art-card button:hover,
+.cart-section button:hover {
+    background: #d93e00;
+}
+
+
+/* About */
+
+.about {
+    text-align: center;
+    padding: 90px 10%;
+    background: #1c1c1c;
+}
+
+.about > p:first-child {
+    color: #ff4d00;
+    letter-spacing: 3px;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.about p:last-child {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+
+/* Cart */
+
+.cart-section {
+    padding: 70px 8%;
+    background: #080808;
+}
+
+.cart-section h2 {
+    margin-bottom: 25px;
+}
+
+.cart-section h3 {
+    margin: 25px 0;
+}
+
+#cart-items {
+    line-height: 2;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: black;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+footer p {
+    margin-top: 10px;
+    color: #aaa;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .about h2 {
+        font-size: 30px;
+    }
+
+}
